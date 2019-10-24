@@ -1,0 +1,12 @@
+﻿  main.cpp
+D:\Visual Studio\VC\Tools\MSVC\14.20.27508\include\ostream(708): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+  C:\Users\Shiio\source\repos\GayPig\apex-legends-internal\main.cpp(216): note: see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)' being compiled
+  D:\Visual Studio\VC\Tools\MSVC\14.20.27508\include\chrono(595): note: see reference to class template instantiation 'std::chrono::duration<double,std::ratio<1,1>>' being compiled
+  D:\Visual Studio\VC\Tools\MSVC\14.20.27508\include\chrono(172): note: see reference to class template instantiation 'std::chrono::duration<__int64,std::nano>' being compiled
+  D:\Visual Studio\VC\Tools\MSVC\14.20.27508\include\chrono(574): note: see reference to class template instantiation 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::steady_clock::duration>' being compiled
+  Generating code
+  214 of 1378 functions (15.5%) were compiled, the rest were copied from previous compilation.
+    210 functions were new in current compilation
+    20 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  apexinternal.vcxproj -> C:\Users\Shiio\source\repos\GayPig\apex-legends-internal\x64\Release\Shiio's Apex Framework.dll
