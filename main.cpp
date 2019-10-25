@@ -305,7 +305,7 @@ int __stdcall hk_query(LARGE_INTEGER *unused) {
 		AllocConsole();
 		freopen("con", "w", stdout);
 
-		apex_base = (uintptr_t)(iat(GetModuleHandleA).get()(xorstr_("EasyAntiCheat_launcher.exe")));
+		apex_base = (uintptr_t)(iat(GetModuleHandleA).get()(xorstr_("r5apex.exe")));
 		discord_base = (uintptr_t)(iat(GetModuleHandleA).get()(xorstr_("DiscordHook64.dll")));
 		g_window = iat(FindWindowA).get()(0, xorstr_("Apex Legends"));
 
@@ -315,8 +315,8 @@ int __stdcall hk_query(LARGE_INTEGER *unused) {
 		enablehk = (enablehook_fn)(memory::occurence(xorstr_("DiscordHook64.dll"), xorstr_("48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 41 56 41 57 48 83 EC 20 33 F6 8B FA")));
 		enablequehk = (applyqueued_fn)(memory::occurence(xorstr_("DiscordHook64.dll"), xorstr_("48 89 5C 24 ? 48 89 6C 24 ? 48 89 7C 24 ? 41 57")));
 
-		o_getname = (getname_fn)(memory::occurence(xorstr_("EasyAntiCheat_launcher.exe"), xorstr_("48 83 3D ? ? ? ? ? 74 08 8B 51 30")));
-		o_worldtoscreen = (worldtoscreen_fn)(memory::occurence(xorstr_("EasyAntiCheat_launcher.exe"), xorstr_("4C 8B DC 53 56 57 48 83 EC 70 8B 41 08 4D 8D 4B 18 F2 0F 10 01 4D 8D 43 BC 89 44 24 58 48 8B DA 49 8D 43 B8")));
+		o_getname = (getname_fn)(memory::occurence(xorstr_("r5apex.exe"), xorstr_("48 83 3D ? ? ? ? ? 74 08 8B 51 30")));
+		o_worldtoscreen = (worldtoscreen_fn)(memory::occurence(xorstr_("r5apex.exe"), xorstr_("4C 8B DC 53 56 57 48 83 EC 70 8B 41 08 4D 8D 4B 18 F2 0F 10 01 4D 8D 43 BC 89 44 24 58 48 8B DA 49 8D 43 B8")));
 
 		createhk((void*)dwpresent, (void*)hk_present, (void**)&o_present);
 		enablehk((void*)dwpresent, 1);
