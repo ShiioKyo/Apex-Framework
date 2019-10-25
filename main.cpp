@@ -259,7 +259,7 @@ long __stdcall hk_present(IDXGISwapChain* p_swapchain, unsigned int syncintreval
 		static short tab = 0;
 
 		ImGui::PushFont(io.Fonts->Fonts[0]);
-		if (ImGui::Begin(xorstr_("shiio loves tash"), 0, ImVec2(260, 400), -1.f, ImGuiWindowFlags_::ImGuiWindowFlags_NoResize | ImGuiWindowFlags_::ImGuiWindowFlags_NoTitleBar)) {
+		if (ImGui::Begin(xorstr_("Simplicity Cheats"), 0, ImVec2(260, 400), -1.f, ImGuiWindowFlags_::ImGuiWindowFlags_NoResize | ImGuiWindowFlags_::ImGuiWindowFlags_NoTitleBar)) {
 			ImGui::BeginChild(xorstr_("##tabs"), ImVec2(80, 100), true, ImGuiWindowFlags_::ImGuiWindowFlags_NoResize); {
 				if (ImGui::Button(xorstr_("aimbot"), ImVec2(50, 20)))
 					tab = 0;
